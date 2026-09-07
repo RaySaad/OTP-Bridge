@@ -20,7 +20,7 @@ jobs:
         with:
           gradle-version: '9.6.0'
       - name: Run pure Kotlin tests
-        run: ./run-core-tests.sh
+        run: bash ./run-core-tests.sh
       - name: Build debug APK
         run: gradle :app:assembleDebug
       - uses: actions/upload-artifact@v4
